@@ -1,0 +1,13 @@
+<h1>The Gossip Project</h1>
+
+<p>
+	<% if moussaillon_signed_in? %>
+
+		<%= link_to 'Se déconnecter', destroy_moussaillon_session_path, method: :delete %>
+
+	<% else %>
+
+		<%= link_to 'Hey bro connecte-toi ou inscris-toi !', new_moussaillon_session_path %>
+
+	<% end %>
+</p>
